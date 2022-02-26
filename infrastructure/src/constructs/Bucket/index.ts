@@ -9,7 +9,7 @@ export class Bucket extends Construct {
 
     this.pipelineBucket = new BucketAWS(scope, 'PipelineBucket', {
       websiteIndexDocument: 'index.html',
-      websiteErrorDocument: 'index.html',
+      websiteErrorDocument: '404.html',
       publicReadAccess: true,
     });
   }

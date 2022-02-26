@@ -18,9 +18,9 @@ export class InfrastructureStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
-    this.project_name = 'react-spa-boilerplate';
+    this.project_name = 'nextjs-boilerplate';
     this.owner = 'hugumoraes';
-    this.repo = 'react-spa-boilerplate';
+    this.repo = 'nextjs-boilerplate';
 
     this.buckets = new Bucket(this, 'Buckets');
 

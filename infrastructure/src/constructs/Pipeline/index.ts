@@ -67,7 +67,7 @@ export class Pipeline extends Construct {
     this.outputWebsite = new Artifact();
 
     this.pipeline = new PipelineAWS(scope, 'Pipeline', {
-      pipelineName: `react-spa-boilerplate-pipeline-${props.project_name}`,
+      pipelineName: `nextjs-boilerplate-pipeline-${props.project_name}`,
       restartExecutionOnUpdate: true,
     });
 
